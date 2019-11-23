@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <title>Chating Page</title>
+<style>
+
+    .row >div {
+        background: rgb(250, 248, 248);
+        border:1px solid #805f94;
+        height:88vh; 
+    }
+
+    .col .row {
+    margin-left: -.75rem;
+    margin-right: -.75rem;
+    margin-top: 29vh;}
+  
+   .purple.darken-3 {
+    background-color: #805f94 !important;
+}
+</style>
+</head>
+
+<body>
+        
+    <nav class="nav-wraper #6a1b9a purple darken-3">
+        <div class="container"> 
+            <a href="#" class="brand-logo  left" >Logo</a>
+             <!--- <a href="#" class="sidenav-trigger left " data-target="mobile-links"> 
+            <i class="material-icons">menu</i>
+            </a> -->
+               <ul class="right  " >
+                <li><a href="#">Home</a></li> 
+                <li><a href="#">About</a></li> 
+                <li><a href="#">Chat</a></li> 
+                <li><a href="#">Profile</a></li> 
+             </ul>
+        </div>
+     </nav>
+
+    <dive class="container scrollspy">
+        <div class="row">
+            <div class="col s3  ">
+                 <form>
+                        <div class="input-field">
+                             <input id="search" type="search" required>
+                              <label for="search"><i class="material-icons">search</i></label>
+                              <!-- I've put "red-text" class to emphasize -->
+                              <i class="material-icons red-text">close</i>
+                            </div>
+                          </form>
+                         </div>
+           
+            <div class="col s9  ">
+                <div class="row ">
+                            <form class="col s12 bottom ">
+                              <div class="row">
+                                </div>
+                            </form>
+                          </div>
+                         
+                            <div class="input-field col s12 ">
+                                      <i class="material-icons prefix">mode_edit</i>
+                                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                                      <label for="icon_prefix2">Message</label>
+                                      <button class="btn right #7b1fa2 purple darken-2 " type="send" name="action">send
+                                            <i class="material-icons ">send</i></button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </dive>
+ 
+ 
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+     <script src ="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script>
+         $(document).ready(function(){
+             $(".sidenav").sidenave();
+
+              $(".scrollspy").scrollSpy();
+             
+              $('#textarea1').val('New Text');
+              M.textareaAutoResize($('#textarea1'));
+     
+         })
+    
+     </script>
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
